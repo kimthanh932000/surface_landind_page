@@ -1,0 +1,100 @@
+header {
+	width: 100%;
+	height: 960px;
+	background-image: url(../img/header-background.png);
+	background-size: cover;
+	background-position: top center;
+	background-color: rgba($color-violet-dark, 1);
+	color: $color-white;
+	text-transform: uppercase;
+	padding: 50px 120px 0;
+
+	.logo-box {
+		margin-bottom: 305px;
+		&__img {
+			width: 190px;
+			height: 30px;
+		}
+
+		&__info {
+			font-size: 14px;
+			float: right;
+			line-height: 30px;
+			letter-spacing: 1.5px;
+		}
+	}
+
+	.heading-box {
+		font-size: 40px;
+		font-weight: bold;
+		letter-spacing: 5px;
+		position: relative;
+
+		@include clearfix
+
+		.text--left{
+			position: relative;
+			z-index: 2;
+		}
+		.text--right{
+			float: right;
+		}
+	}
+
+	.navigation {
+		width: 100%;
+		padding: 5px 0;
+
+		@include clearfix;
+
+		&-menu {
+			list-style: none;
+			float: right;
+			&__item {
+				display: inline-block;
+
+				&:not(:last-child){
+					padding-right: 35px;
+				}
+				a {
+					text-decoration: none;
+					color: inherit;
+					font-size: 14px;
+					color: $color-violet;
+
+					&:hover {
+						color: $color-white;
+					}
+				}
+			}
+		}
+	}
+	.btn-group{
+		text-align: center;
+		letter-spacing: 1.5px;
+
+		.btn-download{
+			text-align: left;
+			padding: 0 50px;
+			margin-top: 175px;
+
+			&:not(:last-child){
+				margin-right: 50px;
+			}
+
+			.store-icon{
+				display: inline-block;
+				margin-right: 30px;
+			}
+
+			.btn-text{
+				display: inline-block;
+
+				.store-name{
+					display: block;
+					font-weight: 600;
+				}
+			}
+		}
+	}
+}

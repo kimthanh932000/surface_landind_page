@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 16px; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400; }
+
+.btn {
+  width: 315px;
+  height: 80px;
+  background-color: #614ea3;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer; }
+
+.slash {
+  height: 5px;
+  width: 350px;
+  background-color: #614ea3;
+  transform: rotate(120deg);
+  position: absolute;
+  left: 24%;
+  top: 45%;
+  z-index: 1; }
+
+header {
+  width: 100%;
+  height: 960px;
+  background-image: url(../img/header-background.png);
+  background-size: cover;
+  background-position: top center;
+  background-color: #171638;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 50px 120px 0; }
+  header .logo-box {
+    margin-bottom: 305px; }
+    header .logo-box__img {
+      width: 190px;
+      height: 30px; }
+    header .logo-box__info {
+      font-size: 14px;
+      float: right;
+      line-height: 30px;
+      letter-spacing: 1.5px; }
+  header .heading-box {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    position: relative; }
+    header .heading-box::after {
+      content: "";
+      display: table;
+      clear: both; }
+    header .heading-box .text--left {
+      position: relative;
+      z-index: 2; }
+    header .heading-box .text--right {
+      float: right; }
+  header .navigation {
+    width: 100%;
+    padding: 5px 0; }
+    header .navigation::after {
+      content: "";
+      display: table;
+      clear: both; }
+    header .navigation-menu {
+      list-style: none;
+      float: right; }
+      header .navigation-menu__item {
+        display: inline-block; }
+        header .navigation-menu__item:not(:last-child) {
+          padding-right: 35px; }
+        header .navigation-menu__item a {
+          text-decoration: none;
+          color: inherit;
+          font-size: 14px;
+          color: #614ea3; }
+          header .navigation-menu__item a:hover {
+            color: #fff; }
+  header .btn-group {
+    text-align: center;
+    letter-spacing: 1.5px; }
+    header .btn-group .btn-download {
+      text-align: left;
+      padding: 0 50px;
+      margin-top: 175px; }
+      header .btn-group .btn-download:not(:last-child) {
+        margin-right: 50px; }
+      header .btn-group .btn-download .store-icon {
+        display: inline-block;
+        margin-right: 30px; }
+      header .btn-group .btn-download .btn-text {
+        display: inline-block; }
+        header .btn-group .btn-download .btn-text .store-name {
+          display: block;
+          font-weight: 600; }

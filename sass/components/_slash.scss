@@ -1,0 +1,10 @@
+.slash{
+	height: 5px;
+	width: 350px;
+	background-color: $color-violet;
+	transform: rotate(120deg);
+	position: absolute;
+	left: 24%;
+	top: 45%;
+	z-index: 1;
+}
