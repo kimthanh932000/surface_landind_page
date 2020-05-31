@@ -1,0 +1,21 @@
+.plus-box{
+	position: absolute;
+	top: 20%;
+	left: 18%;
+
+	&__sign{
+		font-size: 3rem;
+		color: $color-violet-2;
+	}
+
+	&__sign--light{
+		opacity: .4;
+		position: absolute;
+	}
+
+	&__sign--dark{
+		position: absolute;
+		top: .8rem;
+		left: 2rem;
+	}
+}

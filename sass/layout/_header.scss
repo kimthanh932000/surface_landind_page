@@ -32,6 +32,10 @@ header {
 
 		@include clearfix
 
+		.slash{
+			@include slash($width: 35rem, $top: 42%, $left: 20.4%, $color: $color-violet)
+		}
+
 		.text--left{
 			position: relative;
 			z-index: 2;
