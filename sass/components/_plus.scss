@@ -1,7 +1,6 @@
 .plus-box{
 	position: absolute;
-	top: 20%;
-	left: 18%;
+	z-index: 1;
 
 	&__sign{
 		font-size: 3rem;
@@ -15,7 +14,5 @@
 
 	&__sign--dark{
 		position: absolute;
-		top: .8rem;
-		left: 2rem;
 	}
 }

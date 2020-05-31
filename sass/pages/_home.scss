@@ -1,10 +1,20 @@
 .section-one {
-	.slash{
+	.slash {
 		@include slash($width: 75rem, $top: 48%, $left: 4.3%, $color: $color-violet-light);
 	}
 
 	.section-athletes {
 		position: relative;
+
+		.plus-box {
+			top: 20%;
+			left: 18%;
+
+			&__sign--dark {
+				top: .8rem;
+				left: 2rem;
+			}
+		}
 
 		.section-img {
 			width: 58.7rem;
@@ -14,72 +24,117 @@
 			left: 11%;
 			z-index: 1;
 		}
+	}
 
-		.section-box{
-			width: 100%;
-			height: 23rem;
-			position: relative;
+	.section-players {
+		position: relative;
 
-			@include clearfix;
+		.slash-one {
+			@include slash($width: 40rem, $top: 60%, $left: 43%, $color: $color-violet-light);
+		}
 
-			&__background--grey {
-				background-color: $color-grey;
+		.slash-two {
+			@include slash($width: 40rem, $top: 20%, $left: 70%, $color: $color-violet-light);
+		}
+
+		.plus-box {
+			top: 10%;
+			left: 53%;
+
+			&__sign--light {
+				top: 1.5rem;
+				left: 2.5rem;
+			}
+		}
+
+		.plus-box-two {
+			top: 40%;
+			left: 80%;
+		}
+
+		.section-img {
+			width: 90rem;
+			height: 80rem;
+			position: absolute;
+			top: -3%;
+			right: 5%;
+			z-index: 1;
+		}
+	}
+
+	.section-box {
+		width: 100%;
+		height: 23rem;
+		position: relative;
+
+		@include clearfix;
+
+		&__background--grey {
+			background-color: $color-grey;
+		}
+
+		&__background--violet {
+			background-color: $color-violet-2;
+		}
+
+		&__background--violet-dark {
+			background-color: $color-violet-dark-2;
+		}
+
+		.position-right {
+			right: 0;
+		}
+
+		.section-sub {
+			width: 45%;
+			line-height: 1.5;
+
+			@include verticalCenter;
+
+			.section__heading {
+				padding-top: 6rem;
+				letter-spacing: .5rem;
 			}
 
-			&__background--violet {
-				background-color: $color-violet-2;
+			.heading-box {
+				position: relative;
+
+				&__number {
+					display: inline-block;
+					font-size: 1.8rem;
+					font-weight: 900;
+
+					@include verticalCenter;
+
+					&-text--violet {
+						color: $color-violet-light;
+					}
+				}
+
+				&__underline--violet {
+					@include underline($color: $color-violet-2);
+				}
+
+				&__underline--white {
+					@include underline($color: $color-white);
+				}
+
+				&__text {
+					display: inline-block;
+					font-size: 3.6rem;
+					text-transform: uppercase;
+					color: $color-grey-3;
+					padding: 0 3rem;
+				}
 			}
 
-			.section-sub {
-				width: 45%;
-				float: right;
-				line-height: 1.5;
-				right: 0;
-				padding-right: 9rem;
+			.content-box {
 
-				@include verticalCenter;
+				&__content {
+					font-size: 2rem;
 
-				.section__heading{
-					padding-top: 6rem;
-					letter-spacing: .5rem;
-				}
-
-				.heading-box {
-					position: relative;
-
-					&__number {
-						display: inline-block;
-						font-size: 1.8rem;
-						font-weight: 900;
-
-						@include verticalCenter;
-					}
-
-					&__underline--violet{
-						@include underline($color: $color-violet-2);
-					}
-
-					&__underline--white{
-						@include underline($color: $color-white);
-					}
-
-					&__text {
-						display: inline-block;
-						font-size: 3.6rem;
-						text-transform: uppercase;
-						color: $color-grey-3;
-						padding: 0 3rem;
-					}
-				}
-
-				.content-box {
-
-					&__content {
-						font-size: 2rem;
-
-						&--white{
-							color: $color-white;
-						}
+					&--white {
+						color: $color-white;
 					}
 				}
 			}

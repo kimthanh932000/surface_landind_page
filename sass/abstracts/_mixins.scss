@@ -20,14 +20,10 @@
 }
 
 @mixin slash($width, $top, $left, $color) {
-	height: .5rem;
 	width: $width;
 	background-color: $color;
-	transform: rotate(126deg);
-	position: absolute;
 	left: $left;
 	top: $top;
-	z-index: 1;
 }
 
 @mixin underline($color) {
@@ -40,3 +36,4 @@
 		border-radius: 3px;
 	}
 }
+
