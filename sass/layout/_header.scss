@@ -1,33 +1,33 @@
 header {
 	width: 100%;
-	height: 960px;
+	height: 96rem;
 	background-image: url(../img/header-background.png);
 	background-size: cover;
 	background-position: top center;
 	background-color: rgba($color-violet-dark, 1);
 	color: $color-white;
 	text-transform: uppercase;
-	padding: 50px 120px 0;
+	padding: 5rem 12rem 0;
 
 	.logo-box {
-		margin-bottom: 305px;
+		margin-bottom: 30.5rem;
 		&__img {
-			width: 190px;
-			height: 30px;
+			width: 19rem;
+			height: 3rem;
 		}
 
 		&__info {
-			font-size: 14px;
+			font-size: 1.4rem;
 			float: right;
-			line-height: 30px;
+			line-height: 3rem;
 			letter-spacing: 1.5px;
 		}
 	}
 
 	.heading-box {
-		font-size: 40px;
+		font-size: 3.7rem;
 		font-weight: bold;
-		letter-spacing: 5px;
+		letter-spacing: .5rem;
 		position: relative;
 
 		@include clearfix
@@ -43,7 +43,7 @@ header {
 
 	.navigation {
 		width: 100%;
-		padding: 5px 0;
+		padding: .5rem 0;
 
 		@include clearfix;
 
@@ -54,12 +54,12 @@ header {
 				display: inline-block;
 
 				&:not(:last-child){
-					padding-right: 35px;
+					padding-right: 3.5rem;
 				}
 				a {
 					text-decoration: none;
 					color: inherit;
-					font-size: 14px;
+					font-size: 1.4rem;
 					color: $color-violet;
 
 					&:hover {
@@ -75,16 +75,16 @@ header {
 
 		.btn-download{
 			text-align: left;
-			padding: 0 50px;
-			margin-top: 175px;
+			padding: 0 5rem;
+			margin-top: 17.5rem;
 
 			&:not(:last-child){
-				margin-right: 50px;
+				margin-right: 5rem;
 			}
 
 			.store-icon{
 				display: inline-block;
-				margin-right: 30px;
+				margin-right: 3rem;
 			}
 
 			.btn-text{
