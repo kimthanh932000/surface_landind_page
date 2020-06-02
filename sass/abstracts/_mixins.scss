@@ -19,6 +19,12 @@
 	transform: translateY(-50%);
 }
 
+@mixin horizontalCenter {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
 @mixin slash($width, $top, $left, $color) {
 	width: $width;
 	background-color: $color;

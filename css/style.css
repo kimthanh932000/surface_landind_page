@@ -6,8 +6,14 @@
 html {
   font-size: 62.5%; }
 
-.u-margin-bottom {
+.u-margin-bottom-small {
   margin-bottom: 1rem; }
+
+.u-margin-top-big {
+  margin-top: 6rem; }
+
+.u-margin-bottom-big {
+  margin-bottom: 5rem; }
 
 .u-padding-left {
   padding-left: 10rem; }
@@ -20,7 +26,7 @@ body {
   font-weight: 400; }
 
 .heading-primary {
-  font-size: 9rem;
+  font-size: 7rem;
   font-weight: 900;
   color: #e7e7e7;
   text-transform: uppercase; }
@@ -243,3 +249,65 @@ header {
       font-size: 2rem; }
       .section-one .section-box .section-sub .content-box__content--white {
         color: #fff; }
+
+.section-two .section-block {
+  position: relative;
+  display: flex;
+  justify-content: center; }
+  .section-two .section-block__index-box {
+    width: 14rem;
+    height: 14rem;
+    position: absolute;
+    top: 25%;
+    text-align: center;
+    background-color: #5e42b0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); }
+    .section-two .section-block__index-box .underline--violet-light {
+      color: #fff;
+      font-size: 2.4rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      .section-two .section-block__index-box .underline--violet-light::after {
+        content: "";
+        float: left;
+        background: #8f7bc8;
+        width: 100%;
+        height: .5rem;
+        border-radius: 3px; }
+  .section-two .section-block .col-left {
+    width: 50%;
+    height: 50.8rem; }
+    .section-two .section-block .col-left__img {
+      width: 100%;
+      height: 100%; }
+  .section-two .section-block .col-right {
+    width: 50%;
+    padding: 16rem 0 0 10rem;
+    position: relative; }
+    .section-two .section-block .col-right__text {
+      font-size: 2rem;
+      line-height: 1.5; }
+    .section-two .section-block .col-right__text-01 {
+      width: 42%; }
+    .section-two .section-block .col-right__text-02 {
+      width: 47%; }
+    .section-two .section-block .col-right__text-03 {
+      width: 60%; }
+    .section-two .section-block .col-right__underline--violet {
+      font-size: 2.4rem;
+      display: inline-block;
+      color: transparent;
+      position: absolute;
+      bottom: 12%;
+      left: 13%; }
+      .section-two .section-block .col-right__underline--violet::after {
+        content: "";
+        float: left;
+        background: #5e42b0;
+        width: 100%;
+        height: .5rem;
+        border-radius: 3px; }
