@@ -1,11 +1,40 @@
-.btn {
-	width: 315px;
-	height: 80px;
-	background-color: $color-violet;
-	color: $color-white;
-	text-transform: uppercase;
-	font-size: 14px;
-	border: none;
-	border-radius: 50px;
-	cursor: pointer;
+.btn-group{
+	text-align: center;
+	letter-spacing: 1.5px;
+
+	.btn {
+		width: 315px;
+		height: 80px;
+		background-color: $color-violet;
+		color: $color-white;
+		text-transform: uppercase;
+		font-size: 14px;
+		border: none;
+		border-radius: 50px;
+		cursor: pointer;
+	}
+
+	.btn-download{
+		text-align: left;
+		padding: 0 5rem;
+		margin-top: 17.5rem;
+
+		&:not(:last-child){
+			margin-right: 5rem;
+		}
+
+		.store-icon{
+			display: inline-block;
+			margin-right: 3rem;
+		}
+
+		.btn-text{
+			display: inline-block;
+
+			.store-name{
+				display: block;
+				font-weight: 600;
+			}
+		}
+	}
 }

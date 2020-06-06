@@ -7,10 +7,12 @@
 @import "base/typography";
 @import "base/animations";
 
+@import "components/logo";
 @import "components/buttons";
 @import "components/plus";
 @import "components/slash";
 
 @import "layout/header";
+@import "layout/footer";
 
 @import "pages/home";

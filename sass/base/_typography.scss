@@ -8,4 +8,17 @@ body{
 	font-weight: 900;
 	color: $color-grey-2;
 	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
+.heading-sub{
+	font-size: 3rem;
+	font-weight: 900;
+	color: $color-violet-light-3;
+	text-transform: uppercase;
+}
+
+a, a:link, a:visited, a:active{
+	color: $color-white;
+	text-decoration: none;
 }
