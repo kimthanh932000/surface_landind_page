@@ -5,10 +5,18 @@ header {
 	text-transform: uppercase;
 	padding: 5rem 12rem 0;
 
+	@include respond(tab-port) {
+		padding: 5rem 2rem 0;
+		background-position: top -10%;
+	}
 	@include background($background-image: '../img/header-background.png');
 
 	.logo-box {
 		margin-bottom: 30.5rem;
+
+		@include respond(tab-port) {
+			margin-bottom: 19rem;
+		}
 
 		&__info {
 			font-size: 1.4rem;
@@ -24,18 +32,34 @@ header {
 		letter-spacing: .5rem;
 		position: relative;
 
-		@include clearfix
+		@include clearfix;
 
-		.slash{
-			@include slash($width: 35rem, $top: 42%, $left: 20.4%, $color: $color-violet)
+		.slash {
+			@include slash($width: 35rem, $top: 42%, $left: 20.4%, $color: $color-violet);
+
+			@include respond(tab-port) {
+				@include slash($width: 40rem, $top: 49%, $left: 24.4%, $color: $color-violet);
+			}
 		}
 
-		.text--left{
+		.text--left {
 			position: relative;
 			z-index: 2;
+
+			@include respond(tab-port) {
+				padding-left: 6rem;
+			}
 		}
-		.text--right{
+
+		.text--right {
 			float: right;
+
+			@include respond(tab-port) {
+				padding-left: 18rem;
+				float: none;
+				position: relative;
+				z-index: 2;
+			}
 		}
 	}
 
@@ -45,25 +69,54 @@ header {
 
 		@include clearfix;
 
+		@include respond(tab-port) {
+			margin-top: 10rem;
+		}
+
 		&-menu {
 			list-style: none;
 			float: right;
+
+			@include respond(tab-port) {
+				float: none;
+				text-align: center;
+			}
+
 			&__item {
 				display: inline-block;
 
-				&:not(:last-child){
+				&:not(:last-child) {
 					padding-right: 3.5rem;
 				}
+
+				@include respond(tab-port) {
+					&:not(:last-child) {
+						padding-right: 12rem;
+					}
+				}
+
 				a {
 					text-decoration: none;
 					color: inherit;
 					font-size: 1.4rem;
+					font-weight: 600;
 					color: $color-violet;
 
 					&:hover {
 						color: $color-white;
 					}
 				}
+			}
+		}
+	}
+
+	.btn-group {
+
+		.btn-download {
+			margin-top: 17.5rem;
+
+			@include respond(tab-port) {
+				margin-top: 9rem;
 			}
 		}
 	}
