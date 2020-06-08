@@ -67,7 +67,7 @@
 			&-one {
 				@include respond(tab-port) {
 					top: 16%;
-					left: 72%;
+					left: 68%;
 				}
 			}
 
@@ -96,7 +96,7 @@
 
 			@include respond(tab-port) {
 				top: 5%;
-				right: -37.5%;
+				right: -34%;
 			}
 		}
 	}
@@ -255,7 +255,6 @@
 
 		.col-left {
 			width: 50%;
-			//height: 51rem;
 
 			@include respond(tab-port) {
 				width: 100%;

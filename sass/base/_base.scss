@@ -14,7 +14,7 @@ html{
 		font-size: 50%;	//1rem = 8px; 8/16 = 50%
 	}
 	@include respond(phone) { //width < 320px?
-		font-size: 43.75%;	//1rem = 7px; 7/16 =
+		font-size: 37.5%;	//1rem = 6px; 6/16 = 37.5%
 	}
 }
 

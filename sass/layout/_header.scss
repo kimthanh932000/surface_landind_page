@@ -4,11 +4,13 @@ header {
 	color: $color-white;
 	text-transform: uppercase;
 	padding: 5rem 12rem 0;
+	position: relative;
 
 	@include respond(tab-port) {
 		padding: 5rem 2rem 0;
 		background-position: top -10%;
 	}
+
 	@include background($background-image: '../img/header-background.png');
 
 	.logo-box {
@@ -18,11 +20,19 @@ header {
 			margin-bottom: 19rem;
 		}
 
+		@include respond(phone) {
+			text-align: center;
+		}
+
 		&__info {
 			font-size: 1.4rem;
 			float: right;
 			line-height: 3rem;
 			letter-spacing: 1.5px;
+
+			@include respond(phone) {
+				display: none;
+			}
 		}
 	}
 
@@ -34,11 +44,19 @@ header {
 
 		@include clearfix;
 
+		@include respond(phone) {
+			font-size: 2.5rem;
+		}
+
 		.slash {
 			@include slash($width: 35rem, $top: 42%, $left: 20.4%, $color: $color-violet);
 
 			@include respond(tab-port) {
 				@include slash($width: 40rem, $top: 49%, $left: 24.4%, $color: $color-violet);
+			}
+
+			@include respond(phone) {
+				@include slash($width: 40rem, $top: 49%, $left: 4.4%, $color: $color-violet);
 			}
 		}
 
@@ -48,6 +66,11 @@ header {
 
 			@include respond(tab-port) {
 				padding-left: 6rem;
+			}
+
+			@include respond(phone) {
+				padding-left: 0;
+				margin-bottom: 2.5rem;
 			}
 		}
 
@@ -60,6 +83,10 @@ header {
 				position: relative;
 				z-index: 2;
 			}
+
+			@include respond(phone) {
+				padding-left: 8rem;
+			}
 		}
 	}
 
@@ -71,6 +98,12 @@ header {
 
 		@include respond(tab-port) {
 			margin-top: 10rem;
+		}
+
+		@include respond(phone) {
+			//margin-left: 3rem;
+			position: absolute;
+			bottom: 8%;
 		}
 
 		&-menu {
@@ -95,12 +128,22 @@ header {
 					}
 				}
 
+				@include respond(tab-port) {
+					&:not(:last-child) {
+						padding-right: 5rem;
+					}
+				}
+
 				a {
 					text-decoration: none;
-					color: inherit;
 					font-size: 1.4rem;
 					font-weight: 600;
 					color: $color-violet;
+
+					@include respond(phone) {
+						font-size: 2rem;
+						line-height: 2;
+					}
 
 					&:hover {
 						color: $color-white;
@@ -111,12 +154,19 @@ header {
 	}
 
 	.btn-group {
-
+		@include respond(phone) {
+			position: absolute;
+			bottom: 22%;
+		}
 		.btn-download {
 			margin-top: 17.5rem;
 
 			@include respond(tab-port) {
 				margin-top: 9rem;
+			}
+
+			@include respond(phone) {
+				margin-top: 5rem;
 			}
 		}
 	}

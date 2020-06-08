@@ -29,7 +29,7 @@ html {
       font-size: 50%; } }
   @media (max-width: 20em) {
     html {
-      font-size: 43.75%; } }
+      font-size: 37.5%; } }
 
 body {
   box-sizing: border-box; }
@@ -81,28 +81,50 @@ a, a:link, a:visited, a:active {
   text-align: center;
   letter-spacing: 1.5px; }
   .btn-group .btn {
-    width: 315px;
-    height: 80px;
+    width: 31.5rem;
+    height: 8rem;
     background-color: #614ea3;
     color: #fff;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 1.4rem;
     border: none;
-    border-radius: 50px;
+    border-radius: 5rem;
     cursor: pointer; }
+    @media (max-width: 20em) {
+      .btn-group .btn {
+        width: 23.5rem;
+        height: 6rem;
+        font-size: 1.1rem;
+        display: inline-block; } }
   .btn-group .btn-download {
     text-align: left;
-    padding: 0 5rem; }
+    padding: 1.7rem 5rem; }
+    @media (max-width: 20em) {
+      .btn-group .btn-download {
+        padding: 1.3rem 3rem; } }
     .btn-group .btn-download:not(:last-child) {
       margin-right: 5rem; }
+      @media (max-width: 20em) {
+        .btn-group .btn-download:not(:last-child) {
+          margin-right: 1rem; } }
     .btn-group .btn-download .store-icon {
       display: inline-block;
       margin-right: 3rem; }
+      @media (max-width: 20em) {
+        .btn-group .btn-download .store-icon {
+          width: 2.5rem;
+          height: 2.5rem;
+          margin-right: 1rem; } }
     .btn-group .btn-download .btn-text {
-      display: inline-block; }
+      display: inline-block;
+      line-height: 1.5; }
       .btn-group .btn-download .btn-text .store-name {
         display: block;
         font-weight: 600; }
+        @media (max-width: 20em) {
+          .btn-group .btn-download .btn-text .store-name {
+            font-size: 1rem;
+            line-height: 2; } }
 
 .plus-box {
   position: absolute;
@@ -128,6 +150,7 @@ header {
   color: #fff;
   text-transform: uppercase;
   padding: 5rem 12rem 0;
+  position: relative;
   background-image: url("../img/header-background.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -142,11 +165,17 @@ header {
     @media (max-width: 48em) {
       header .logo-box {
         margin-bottom: 19rem; } }
+    @media (max-width: 20em) {
+      header .logo-box {
+        text-align: center; } }
     header .logo-box__info {
       font-size: 1.4rem;
       float: right;
       line-height: 3rem;
       letter-spacing: 1.5px; }
+      @media (max-width: 20em) {
+        header .logo-box__info {
+          display: none; } }
   header .heading-box {
     font-size: 3.7rem;
     font-weight: bold;
@@ -156,6 +185,9 @@ header {
       content: "";
       display: table;
       clear: both; }
+    @media (max-width: 20em) {
+      header .heading-box {
+        font-size: 2.5rem; } }
     header .heading-box .slash {
       width: 35rem;
       background-color: #614ea3;
@@ -169,12 +201,23 @@ header {
           left: 24.4%;
           top: 49%;
           z-index: 1; } }
+      @media (max-width: 20em) {
+        header .heading-box .slash {
+          width: 40rem;
+          background-color: #614ea3;
+          left: 4.4%;
+          top: 49%;
+          z-index: 1; } }
     header .heading-box .text--left {
       position: relative;
       z-index: 2; }
       @media (max-width: 48em) {
         header .heading-box .text--left {
           padding-left: 6rem; } }
+      @media (max-width: 20em) {
+        header .heading-box .text--left {
+          padding-left: 0;
+          margin-bottom: 2.5rem; } }
     header .heading-box .text--right {
       float: right; }
       @media (max-width: 48em) {
@@ -183,6 +226,9 @@ header {
           float: none;
           position: relative;
           z-index: 2; } }
+      @media (max-width: 20em) {
+        header .heading-box .text--right {
+          padding-left: 8rem; } }
   header .navigation {
     width: 100%;
     padding: .5rem 0; }
@@ -193,6 +239,10 @@ header {
     @media (max-width: 48em) {
       header .navigation {
         margin-top: 10rem; } }
+    @media (max-width: 20em) {
+      header .navigation {
+        position: absolute;
+        bottom: 8%; } }
     header .navigation-menu {
       list-style: none;
       float: right; }
@@ -207,19 +257,32 @@ header {
         @media (max-width: 48em) {
           header .navigation-menu__item:not(:last-child) {
             padding-right: 12rem; } }
+        @media (max-width: 48em) {
+          header .navigation-menu__item:not(:last-child) {
+            padding-right: 5rem; } }
         header .navigation-menu__item a {
           text-decoration: none;
-          color: inherit;
           font-size: 1.4rem;
           font-weight: 600;
           color: #614ea3; }
+          @media (max-width: 20em) {
+            header .navigation-menu__item a {
+              font-size: 2rem;
+              line-height: 2; } }
           header .navigation-menu__item a:hover {
             color: #fff; }
+  @media (max-width: 20em) {
+    header .btn-group {
+      position: absolute;
+      bottom: 22%; } }
   header .btn-group .btn-download {
     margin-top: 17.5rem; }
     @media (max-width: 48em) {
       header .btn-group .btn-download {
         margin-top: 9rem; } }
+    @media (max-width: 20em) {
+      header .btn-group .btn-download {
+        margin-top: 5rem; } }
 
 .footer {
   width: 100%;
@@ -384,7 +447,7 @@ header {
     @media (max-width: 48em) {
       .section-one .section-players .plus-box-one {
         top: 16%;
-        left: 72%; } }
+        left: 68%; } }
     .section-one .section-players .plus-box-two {
       top: 40%;
       left: 80%; }
@@ -404,7 +467,7 @@ header {
     @media (max-width: 48em) {
       .section-one .section-players .section-img {
         top: 5%;
-        right: -37.5%; } }
+        right: -34%; } }
 
 .section-one .section-box {
   width: 100%;
